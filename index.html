@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header h2 {
+      margin: 0;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .leftcolumn, .rightcolumn {
+      flex-basis: 48%;
+      padding: 10px;
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    .card h2 {
+      color: #333;
+    }
+
+    .card h5 {
+      color: #888;
+      margin-top: -10px;
+    }
+
+    .fakeimg {
+      background-color: #ddd;
+      height: 200px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .footer h2 {
+      margin: 0;
+    }
+
+    /* Additional Styles */
+
+    .card p {
+      color: #555;
+    }
+
+    .rightcolumn {
+      order: -1;
+    }
+
+    .rightcolumn .card {
+      background-color: #f1f1f1;
+    }
+
+    .rightcolumn .card h3 {
+      color: #333;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Chiwoo's Blog</h2>
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>My South Korea Trip pt1</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <img src="korea.webp" alt="Image description" style="width: 300px; height: 150px;">
+        <p>This picture was taken in South Korea.</p>
+      </div>
+      <div class="card">
+        <h2>My South Korea Trip pt2</h2>
+        <h5>Title description, Sep 2, 2022</h5>
+        <img src="korea2.jpg" alt="Image description" style="width: 300px; height: 150px;">
+        <p>This picture was taken in South Korea.</p>
+      </div>
+      <div class="card">
+        <h3>My Socials</h3>
+        <p>Stay updated with my latest posts on social media.</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <img src="chiwoo.png" alt="Image description" style="width: 500px; height: 200px;">
+        <p>Welcome to my Blog! Check out my latest pictures.</p>
+      </div>
+      <div class="card">
+        <h3>Popular Posts</h3>
+        <img src="india.jpeg" alt="Image description" style="width: 300px; height: 150px;">
+        <img src="china.jfif" alt="Image description" style="width: 300px; height: 150px;">
+        <img src="japan.webp" alt="Image description" style="width: 300px; height: 150px;">
+        <img src="virginia.jpg" alt="Image description" style="width: 300px; height: 150px;">
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>Contact Me</h2>
+  </div>
+  
+  </body>
+  </html>
