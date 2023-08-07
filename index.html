@@ -83,52 +83,77 @@
       color: #333;
       margin-top: 0;
     }
+
+    /* Search Bar Styles */
+
+    .search-form {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-form input[type="text"] {
+      flex: 1;
+      padding: 5px;
+    }
+
+    .search-form button {
+      padding: 5px 10px;
+      margin-left: 5px;
+    }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <h2>Chiwoo's Blog</h2>
-  </div>
-  
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h2>My South Korea Trip pt1</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <img src="korea.webp" alt="Image description" style="width: 300px; height: 150px;">
-        <p>This picture was taken in South Korea.</p>
+<div class="header">
+  <h2>Chiwoo's Blog</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>My South Korea Trip pt1</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <img src="korea.webp" alt="Image description" style="width: 300px; height: 150px;">
+      <form action="/search">
+      <div class="search-form">
+        <input type="text" placeholder="Search for something..."name="query">
+        <button type="submit">Search</button>
       </div>
-      <div class="card">
-        <h2>My South Korea Trip pt2</h2>
-        <h5>Title description, Sep 2, 2022</h5>
-        <img src="korea2.jpg" alt="Image description" style="width: 300px; height: 150px;">
-        <p>This picture was taken in South Korea.</p>
-      </div>
-      <div class="card">
-        <h3>My Socials</h3>
-        <p>Stay updated with my latest posts on social media.</p>
+    </form>
+    </div>
+    <div class="card">
+      <h2>My South Korea Trip pt2</h2>
+      <h5>Title description, Sep 2, 2022</h5>
+      <img src="korea2.jpg" alt="Image description" style="width: 300px; height: 150px;">
+      <div class="search-form">
+        <input type="text" placeholder="Search for something else...">
+        <button type="submit">Search</button>
       </div>
     </div>
-    <div class="rightcolumn">
-      <div class="card">
-        <h2>About Me</h2>
-        <img src="chiwoo.png" alt="Image description" style="width: 500px; height: 200px;">
-        <p>Welcome to my Blog! Check out my latest pictures.</p>
-      </div>
-      <div class="card">
-        <h3>Popular Posts</h3>
-        <img src="india.jpeg" alt="Image description" style="width: 300px; height: 150px;">
-        <img src="china.jfif" alt="Image description" style="width: 300px; height: 150px;">
-        <img src="japan.webp" alt="Image description" style="width: 300px; height: 150px;">
-        <img src="virginia.jpg" alt="Image description" style="width: 300px; height: 150px;">
-      </div>
+    <div class="card">
+      <h3>My Socials</h3>
+      <p>Stay updated with my latest posts on social media.</p>
     </div>
   </div>
-  
-  <div class="footer">
-    <h2>Contact Me</h2>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="chiwoo.png" alt="Image description" style="width: 500px; height: 200px;">
+      <p>Welcome to my Blog! Check out my latest pictures.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Posts</h3>
+      <img src="india.jpeg" alt="Image description" style="width: 300px; height: 150px;">
+      <img src="china.jfif" alt="Image description" style="width: 300px; height: 150px;">
+      <img src="japan.webp" alt="Image description" style="width: 300px; height: 150px;">
+      <img src="virginia.jpg" alt="Image description" style="width: 300px; height: 150px;">
+    </div>
   </div>
-  
-  </body>
-  </html>
+</div>
+
+<div class="footer">
+  <h2>Contact Me</h2>
+</div>
+
+</body>
+</html>
