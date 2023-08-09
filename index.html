@@ -120,15 +120,20 @@
         <button type="submit">Search</button>
       </div>
     </form>
+    {% if query_result %}
+      <p>{{ query_result }}</p>
+    {% endif %}
     </div>
     <div class="card">
       <h2>My South Korea Trip pt2</h2>
-      <h5>Title description, Sep 2, 2022</h5>
-      <img src="korea2.jpg" alt="Image description" style="width: 300px; height: 150px;">
-      <div class="search-form">
-        <input type="text" placeholder="Search for something else...">
-        <button type="submit">Search</button>
-      </div>
+      <h5>Title description, Dec 7, 2017</h5>
+      <img src="korea.webp" alt="Image description" style="width: 300px; height: 150px;">
+      <form action="/search">
+        <div class="search-form">
+          <input type="text" placeholder="Search for something..." name="query">
+          <button type="submit">Search</button>
+        </div>
+      </form>
     </div>
     <div class="card">
       <h3>My Socials</h3>
