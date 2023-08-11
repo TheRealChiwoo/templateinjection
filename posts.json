@@ -1,0 +1,44 @@
+[
+    {
+      "title": "Blog post 1",
+      "text": "This is the content of the first blog post...",
+      "image": "/images/china.jfif",
+      "timestamp": 1691595832
+    },
+    {
+      "title": "Blog post 2",
+      "text": "235efThis is the content of the second blog post...",
+      "image": "/images/chiwoo.png",
+      "timestamp": 1691500032
+    },
+    {
+      "title": "Blog post 3",
+      "text": "This is the content of the third blog post...",
+      "image": "/images/india.jpeg",
+      "timestamp": 1691500032
+    },
+    {
+      "title": "Blog post 4",
+      "text": "This is the content of the fourth blog post...",
+      "image": "/images/japan.webp",
+      "timestamp": 1691500032
+    },
+    {
+      "title": "Blog post 5",
+      "text": "This is the content of the fifth blog post...",
+      "image": "/images/korea.webp",
+      "timestamp": 1691500032
+    },
+    {
+      "title": "Blog post 6",
+      "text": "This is the content of the sixth blog post...",
+      "image": "/images/korea2.jpg",
+      "timestamp": 1691500032
+    },
+    {
+      "title": "Blog post 7",
+      "text": "This is the content of the seventh blog post...",
+      "image": "/images/virginia.jpg",
+      "timestamp": 1691500032
+    }
+  ]

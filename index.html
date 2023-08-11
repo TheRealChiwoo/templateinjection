@@ -104,61 +104,50 @@
 </head>
 <body>
 
-<div class="header">
-  <h2>Chiwoo's Blog</h2>
-</div>
-
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>My South Korea Trip pt1</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <img src="korea.webp" alt="Image description" style="width: 300px; height: 150px;">
-      <form action="/search">
-      <div class="search-form">
-        <input type="text" placeholder="Search for something..."name="query">
-        <button type="submit">Search</button>
+  <div class="header">
+    <h2>Chiwoo's Blog</h2>
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      {% for post in blog_posts %}
+      <div class="card">
+        <h2>{{ post["title"] }}</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <img src="{{ post["image"] }}" alt="Image description" style="width: 300px; height: 150px;">
+        <form action="/search">
+          <div class="search-form">
+            <input type="text" placeholder="Search for something..." name="query">
+            <button type="submit">Search</button>
+          </div>
+        </form>
+        <p>{{ post["text"] }}</p>
       </div>
-    </form>
-    {% if query_result %}
-      <p>{{ query_result }}</p>
-    {% endif %}
+      {% endfor %}
+      <div class="card">
+        <h3>My Socials</h3>
+        <p>Stay updated with my latest posts on social media.</p>
+      </div>
     </div>
-    <div class="card">
-      <h2>My South Korea Trip pt2</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <img src="korea.webp" alt="Image description" style="width: 300px; height: 150px;">
-      <form action="/search">
-        <div class="search-form">
-          <input type="text" placeholder="Search for something..." name="query">
-          <button type="submit">Search</button>
-        </div>
-      </form>
-    </div>
-    <div class="card">
-      <h3>My Socials</h3>
-      <p>Stay updated with my latest posts on social media.</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <img src="chiwoo.png" alt="Image description" style="width: 500px; height: 200px;">
-      <p>Welcome to my Blog! Check out my latest pictures.</p>
-    </div>
-    <div class="card">
-      <h3>Popular Posts</h3>
-      <img src="india.jpeg" alt="Image description" style="width: 300px; height: 150px;">
-      <img src="china.jfif" alt="Image description" style="width: 300px; height: 150px;">
-      <img src="japan.webp" alt="Image description" style="width: 300px; height: 150px;">
-      <img src="virginia.jpg" alt="Image description" style="width: 300px; height: 150px;">
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <img src="chiwoo.png" alt="Image description" style="width: 500px; height: 200px;">
+        <p>Welcome to my Blog! Check out my latest pictures.</p>
+      </div>
+      <div class="card">
+        <h3>Popular Posts</h3>
+        <!-- Display popular post images from blog_posts -->
+        {% for post in blog_posts %}
+          <img src="{{ post["image"] }}" alt="Image description" style="width: 300px; height: 150px;">
+        {% endfor %}
+      </div>
     </div>
   </div>
-</div>
-
-<div class="footer">
-  <h2>Contact Me</h2>
-</div>
-
-</body>
-</html>
+  
+  <div class="footer">
+    <h2>Contact Me</h2>
+  </div>
+  
+  </body>
+  </html>
